@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a,red=10,yellow=3,green=7;
+    while(1)
+    {
+        for(a=red;a>=1;a--)
+        printf("RED:%d\n",a);
+        for(a=yellow;a>=1;a--)
+        printf("YELLOW:%d\n",a);
+        for(a=green;a>=1;a--)
+        printf("GREEN:%d\n",a);
+        
+    }
+    return 0;
+}
