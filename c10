@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main() {
+    float hours,daily,total = 0;
+    float rate=100;
+    int i;
+    printf("Payroll Summary\n");
+    printf("Day Hours\n");
+    for(i=1;i<=7;i++)
+    {
+        printf("%2d",i);
+        scanf("%f",&hours);
+        if(hours<=8)
+            daily=hours*rate;
+        else
+            daily=8*rate+(hours-8)*rate*2;
+
+        printf("%5.1f %7.2f\n",hours,daily);
+        total+=daily;
+    }
+    printf("Total Weekly Salary: %.2f\n", total);
+
+    return 0;
+}
