@@ -1,0 +1,87 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int s1,s2,s3,s4,s5,s6,total;
+    float percentage;
+    printf("Enter the marks 0f 6 subjects = ");
+    scanf("%d %d %d %d %d %d",&s1,&s2,&s3,&s4,&s5,&s6);
+    total=s1+s2+s3+s4+s5+s6;
+    printf("Grand Total = %d\n",total);
+    percentage=total/6.0;
+    printf("Percentage  = %.2f\n",percentage);
+    if(percentage>=90)
+       printf("Excellent");
+    else if(percentage>=80)
+       printf("Very good");
+    else if(percentage>=70)
+       printf("Good");
+    else if(percentage>=60)
+       printf("Average");
+    else
+       printf("Need improvement");
+       
+    int m=0,n=0,o=0,p=0;   
+       
+    if(s1>90)
+	 m++;
+	else if(s1>=75 && s1<=90)
+	 n++;
+	else if(s1<75 && s1>=50)
+	 o++;
+	else if(s1<50)
+	 p++;
+
+	if(s2>90)
+	 m++;
+	else if(s2>=75 && s2<=90)
+	 n++;
+	else if(s2<75 && s2>=50)
+	 o++;
+	else if(s2<50)
+	 p++;
+
+	if(s3>90)
+	 m++;
+	else if(s3>=75 && s3<=90)
+	 n++;
+	else if(s3<75 && s3>=50)
+	 o++;
+	else if(s3<50)
+	 p++;
+
+	if(s4>90)
+	 m++;
+	else if(s4>=75 && s4<=90)
+	 n++;
+	else if(s4<75 && s4>=50)
+	 o++;
+	else if(s4<50)
+	 p++;
+
+	if(s5>90)
+	 m++;
+	else if(s5>=75 && s5<=90)
+	 n++;
+	else if(s5<75 && s5>=50)
+	 o++;
+	else if(s5<50)
+	 p++;
+
+	if(s6>90)
+	 m++;
+	else if(s6>=75 && s6<=90)
+	 n++;
+	else if(s6<75 && s6>=50)
+	 o++;
+	else if(s6<50)
+	 p++;
+
+	printf("\nSubjects >90  =%d\n",m);
+	printf("Subjects 75-90  =%d\n",n);
+	printf("Subjects 50-75  =%d\n",o);
+	printf("Subjects <50    =%d\n",p);
+
+    return 0;
+}
