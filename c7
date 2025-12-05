@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int days,a=0;
+    printf("Enter days overdue: ");
+    scanf("%d",&days);
+    if(days>30){
+        printf("Membership Cancelled\n");}
+    else if(days>10){
+        a=5*2+5*5+(days-10)*10;
+        printf("Fine amount: 5*2 + 5*5 + %d*10 = %d\n", days-10, a);}
+    else if (days>5) {
+        a=5*2+(days-5)*5;
+        printf("Fine amount: 5*2 + %d*5 = %d\n", days-5, a);}
+    else if (days>0) {
+        a=days*2;
+        printf("Fine amount: %d*2 = %d\n", days,a);}
+    else {
+        printf("No fine amount.\n");}
+
+    return 0;
+}
