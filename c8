@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main()
+{
+    float i;
+    printf("Tank level = ");
+    scanf("%f",&i);
+    if(i<10)
+    printf("Alert!");
+    else if(i<=30)
+    printf("low");
+    else if(i>30 && i<=70)
+    printf("medium");
+    else if(i>70)
+    printf("high");
+    else
+    {
+        
+    }
+
+    return 0;
+}
