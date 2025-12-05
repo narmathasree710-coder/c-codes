@@ -1,0 +1,45 @@
+
+#include <stdio.h>
+
+int main()
+{
+	float a,b,c,d,e,bill,dis,afterdiscount,gst,finalamount;
+	printf("Amount of 1st item:");
+	scanf("%f",&a);
+	printf("Amount of 2nd item:");
+	scanf("%f",&b);
+	printf("Amount of 3rd item:");
+	scanf("%f",&c);
+	printf("Amount of 4th item:");
+	scanf("%f",&d);
+	printf("Amount of 5th item:");
+	scanf("%f",&e);
+
+	bill=a+b+c+d+e;
+
+	if(bill>500)
+	{
+		dis=bill*0.05;
+	}
+
+	else if(bill>=1000)
+	{
+		dis=bill*0.10;
+	}
+	 
+	 afterdiscount=bill-dis;
+	 
+	 if(bill>500)
+	 gst=afterdiscount*0.05;
+	 
+	 else if(bill>=1000)
+	 gst=afterdiscount*0.05;
+	 finalamount=afterdiscount+gst;
+	 printf("Total bill = %.2f\n",bill);
+	 printf("Discount = %.2f\n",dis);
+	 printf("Amount after discount = %.2f\n",afterdiscount);
+	 printf("GST = %.2f\n",gst);
+	 printf("Final amount = %.2f\n",finalamount);
+
+return 0;
+}
